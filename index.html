@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Distribuidora de Ovos Prates</title>
+  <title>Distribuidora de Ovos Prates | Qualidade e Logística em Campo Limpo Paulista</title>
+  <meta name="description"
+    content="Distribuidora de ovos com excelência em logística e qualidade. Atendemos atacado e varejo em Campo Limpo Paulista e região." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,13 +17,16 @@
   <header class="topo">
     <div class="banner-topo">
       <img src="./img/Logo Prates 2.png" alt="Distribuidora de Ovos Prates" />
-      <div class="menu-imagem">
-        <a href="#inicio" class="link-menu" style="left: 6%;">Início</a>
-        <a href="#sobre" class="link-menu" style="left: 18%;">Sobre</a>
-        <a href="#produtos" class="link-menu" style="left: 30%;">Produtos</a>
-        <a href="#fornecedores" class="link-menu" style="left: 42%;">Fornecedores</a> <!-- Novo botão -->
-        <a href="#contato" class="link-menu" style="left: 54%;">Contato</a>
-      </div>
+      <nav aria-label="Menu principal">
+        <div class="menu-imagem">
+          <a href="#inicio" class="link-menu" style="left: 6%;">Início</a>
+          <a href="#sobre" class="link-menu" style="left: 18%;">Sobre</a>
+          <a href="#produtos" class="link-menu" style="left: 30%;">Produtos</a>
+          <a href="#fornecedores" class="link-menu" style="left: 42%;">Fornecedores</a>
+          <a href="#contato" class="link-menu" style="left: 54%;">Contato</a>
+        </div>
+      </nav>
+    </div>
     </div>
   </header>
 
@@ -35,7 +40,7 @@
       <h2 id="titulo-sobre" class="sr-only" aria-hidden="true" style="position:absolute; left:-9999px; top:auto;">Sobre
       </h2>
 
-      <div id="conteudo-sobre" class="conteudo-sobre oculto" aria-hidden="true">
+      <div id="conteudo-sobre" aria-hidden="true">
         <p class="destaque-sobre">
           Somos referência em qualidade e logística no setor de ovos...
         </p>
@@ -105,60 +110,60 @@
 
     <!-- GALERIA -->
 
-    <section id="galeria" class="galeria-cards" aria-labelledby="dia-dia">
-      <h2 id="titulo-cards">Nosso dia a dia</h2>
-      <div class="cards-dia-dia" role="list" aria-label="dia a dia">
-        <article class="card" role="listitem" aria-label="Fachada loja Prates">
-          <figure>
-            <img src="./img/fachada-prates.jpg" alt="Fachada loja Prates" />
-          </figure>
-          <h3>Fachada Prates</h3>
-          <p>Fachada da loja Prates sempre organizada para melhor atendimento aos nossos clientes.</p>
-        </article>
+    <section id="galeria" class="galeria-cards" aria-labelledby="titulo-cards"></section>
+    <h2 id="titulo-cards">Nosso dia a dia</h2>
+    <div class="cards-dia-dia" role="list" aria-label="dia a dia">
+      <article class="card" role="listitem" aria-label="Fachada loja Prates">
+        <figure>
+          <img src="./img/fachada-prates.jpg" alt="Fachada loja Prates" />
+        </figure>
+        <h3>Fachada Prates</h3>
+        <p>Fachada da loja Prates sempre organizada para melhor atendimento aos nossos clientes.</p>
+      </article>
 
-        <article class="card" role="listitem" aria-label="Expositor com ofertas">
-          <figure>
-            <img src="./img/expositor-ofertas.jpg" alt="Expositor com ovos em promoção" />
-          </figure>
-          <h3>Ofertas especiais</h3>
-          <p>Promoções semanais com ovos frescos e preços acessíveis para todos os clientes.</p>
-        </article>
+      <article class="card" role="listitem" aria-label="Expositor com ofertas">
+        <figure>
+          <img src="./img/expositor-ofertas.jpg" alt="Expositor com ovos em promoção" />
+        </figure>
+        <h3>Ofertas especiais</h3>
+        <p>Promoções semanais com ovos frescos e preços acessíveis para supermercados e padarias.</p>
+      </article>
 
-        <article class="card" role="listitem" aria-label="Variedade de ovos">
-          <figure>
-            <img src="./img/ovos-brancos-vermelhos.jpg" alt="Ovos organizados em bandejas" />
-          </figure>
-          <h3>Organização e variedade</h3>
-          <p>Ovos brancos, vermelhos e de codorna organizados com cuidado e higiene.</p>
-        </article>
+      <article class="card" role="listitem" aria-label="Variedade de ovos">
+        <figure>
+          <img src="./img/ovos-brancos-vermelhos.jpg" alt="Ovos organizados em bandejas" />
+        </figure>
+        <h3>Organização e variedade</h3>
+        <p>Ovos brancos, vermelhos e de codorna organizados com cuidado e higiene.</p>
+      </article>
 
-        <article class="card" role="listitem" aria-label="Estoque com caixas">
-          <figure>
-            <img src="./img/organização estoque.jpg" alt="Estoque com caixas empilhadas" />
-          </figure>
-          <h3>Estoque eficiente</h3>
-          <p>Armazenamento seguro e ágil para atender com qualidade toda a região.</p>
-        </article>
-        <!--Video nosso-dia a dia-->
-        <div class="videos-dia-dia">
-          <div class="card-video">
-            <video controls>
-              <source src="./video-prates-editado.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeo HTML5.
-            </video>
-          </div>
-          <div class="card-video">
-            <video controls>
-              <source src="./Video-rotina-prates2.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeo HTML5.
-            </video>
-          </div>
+      <article class="card" role="listitem" aria-label="Estoque com caixas">
+        <figure>
+          <img src="./img/organização estoque.jpg" alt="Estoque com caixas empilhadas" />
+        </figure>
+        <h3>Estoque eficiente</h3>
+        <p>Armazenamento seguro e ágil para atender com qualidade em Campo Limpo Paulista e região.</p>
+      </article>
+      <!--Video nosso-dia a dia-->
+      <div class="videos-dia-dia">
+        <div class="card-video">
+          <video controls>
+            <source src="./video-prates-editado.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo HTML5.
+          </video>
         </div>
-
-
-        <!-- Texto institucional abaixo do vídeo -->
-
+        <div class="card-video">
+          <video controls>
+            <source src="./Video-rotina-prates2.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+        </div>
       </div>
+
+
+      <!-- Texto institucional abaixo do vídeo -->
+
+    </div>
     </section>
 
     <section id="fornecedores" class="fornecedores">
