@@ -35,26 +35,26 @@
       <h2 id="titulo-sobre" class="sr-only" aria-hidden="true" style="position:absolute; left:-9999px; top:auto;">Sobre
       </h2>
 
-      <!-- Botão de conteúdo adicional acessível (semântica de ocultação) -->
-
       <div id="conteudo-sobre" class="conteudo-sobre oculto" aria-hidden="true">
-        <p>Somos referência em qualidade e logística no setor de ovos...</p>
+        <p class="destaque-sobre">
+          Somos referência em qualidade e logística no setor de ovos...
+        </p>
       </div>
-
-      <div class="sobre-conteudo" role="group" aria-label="Resumo sobre a empresa">
-        <div class="sobre-texto">
-          <p>A <strong>Distribuidora de Ovos Prates</strong> atua com excelência no fornecimento de ovos para atacado e
-            varejo. Trabalhamos com ovos brancos, vermelhos, jumbo, extra, grande, pequeno e codorna.</p>
-          <p>Nosso compromisso é com a qualidade, agilidade e confiança. Mantemos um estoque organizado e seguro para
-            garantir frescor e segurança alimentar.</p>
-        </div>
-        <div class="sobre-imagem">
-          <figure>
-            <img src="./img/Fachada 1.png" alt="Fachada da empresa Distribuidora de Ovos Prates" />
-            <figcaption>Fachada da Distribuidora de Ovos Prates</figcaption>
-          </figure>
-        </div>
+    </section>
+    <div class="sobre-conteudo" role="group" aria-label="Resumo sobre a empresa">
+      <div class="sobre-texto">
+        <p>A <strong>Distribuidora de Ovos Prates</strong> atua com excelência no fornecimento de ovos para atacado e
+          varejo. Trabalhamos com ovos brancos, vermelhos, jumbo, extra, grande, pequeno e codorna.</p>
+        <p>Nosso compromisso é com a qualidade, agilidade e confiança. Mantemos um estoque organizado e seguro para
+          garantir frescor e segurança alimentar.</p>
       </div>
+      <div class="sobre-imagem">
+        <figure>
+          <img src="./img/Fachada 1.png" alt="Fachada da empresa Distribuidora de Ovos Prates" />
+          <figcaption>Fachada da Distribuidora de Ovos Prates</figcaption>
+        </figure>
+      </div>
+    </div>
     </section>
 
     <!-- PRODUTOS -->
@@ -74,7 +74,7 @@
             <img src="./img/Ovos vermelhos.jpeg" alt="Ovos brancos e vermelhos em cesto de madeira" />
           </figure>
           <h3>Ovos Vermelhos</h3>
-          <p>Mais encorpados e nutritivos. Disponíveis em bandejas e caixas.</p>
+          <p>Mais encorpados e nutritivos, Embalagens de 30 unidades e caixas com 360 unidades.</p>
         </article>
 
         <article class="card" role="listitem" aria-label="Ovos de Codorna">
@@ -139,96 +139,120 @@
           <h3>Estoque eficiente</h3>
           <p>Armazenamento seguro e ágil para atender com qualidade toda a região.</p>
         </article>
+        <!--Video nosso-dia a dia-->
+        <div class="videos-dia-dia">
+          <div class="card-video">
+            <video controls>
+              <source src="./video-prates-editado.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo HTML5.
+            </video>
+          </div>
+          <div class="card-video">
+            <video controls>
+              <source src="./Video-rotina-prates2.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo HTML5.
+            </video>
+          </div>
+        </div>
+
+
+        <!-- Texto institucional abaixo do vídeo -->
+
       </div>
-      <section id="dia-a-dia" class="nosso-dia">
-        <div class="card-video">
-          <video autoplay loop controls playsinline>
-            <source src="./img/video/video-prates-editado.mp4" type="video/mp4" />
-            Seu navegador não suporta vídeo HTML5.
-          </video>
+    </section>
 
-          <!-- Texto institucional abaixo do vídeo -->
+    <section id="fornecedores" class="fornecedores">
+      <h2 id="titulo-fornecedores">Nossos Fornecedores</h2>
+      <div class="logos-fornecedores">
+        <img src="./img/Granja-Tsuru.jpg" alt="Logo Tsuru" />
+        <img src="./img/logo.Yabuta.jpg" alt="Logo Yabuta" />
+        <img src="./img/logo-clara-e-gema.jpg" alt="Logo Clara e Gema" />
+      </div>
+    </section>
 
-        </div>
-      </section>
+    <section id="regioes-atendidas" class="regioes">
+      <h2>Regiões Atendidas</h2>
 
-      <section id="fornecedores" class="fornecedores">
-        <h2 id="titulo-fornecedores">Nossos Fornecedores</h2>
-        <div class="logos-fornecedores">
-          <img src="./img/Granja-Tsuru.jpg" alt="Logo Tsuru" />
-          <img src="./img/logo.Yabuta.jpg" alt="Logo Yabuta" />
-          <img src="./img/logo-clara-e-gema.jpg" alt="Logo Clara e Gema" />
-        </div>
-      </section>
+      <ul class="lista-cidades">
+        <li>Campo Limpo Paulista</li>
+        <li>Várzea Paulista</li>
+        <li>Jundiaí</li>
+        <li>Campinas</li>
+        <li>Itatiba</li>
+        <li>Francisco Morato</li>
+        <li>Franco da Rocha</li>
+        <li>Caieiras</li>
+      </ul>
+    </section>
 
-      <!-- SEJA UM PARCEIRO -->
-      <section id="parceiro" class="parceiro">
-        <h2 id="titulo-parceiro">Seja um Parceiro</h2>
-        <div class="texto-parceiro">
-          <p>Junte-se a nós na missão de levar qualidade e confiança<br>
-            para milhares de famílias todos os dias.</p>
+    <!-- SEJA UM PARCEIRO -->
+    <section id="parceiro" class="parceiro">
+      <h2 id="titulo-parceiro">Seja um Parceiro</h2>
+      <div class="texto-parceiro">
+        <p>Junte-se a nós na missão de levar qualidade e confiança<br>
+          para milhares de famílias todos os dias.</p>
 
-          <p>Se você é produtor, distribuidor ou tem interesse<br>
-            em fazer parte da nossa rede, entre em contato!</p>
+        <p>Se você é produtor, distribuidor ou tem interesse<br>
+          em fazer parte da nossa rede, entre em contato!</p>
 
-          <p>Vamos crescer juntos com responsabilidade,<br>
-            transparência e compromisso com o cliente.</p>
-        </div>
-      </section>
+        <p>Vamos crescer juntos com responsabilidade,<br>
+          transparência e compromisso com o cliente.</p>
+      </div>
+    </section>
 
-      <!-- BENEFÍCIOS DO OVO -->
-      <section id="beneficios" class="beneficios" aria-labelledby="titulo-beneficios">
-        <h2 id="titulo-beneficios">Benefícios do Ovo</h2>
-        <div class="infograficos" role="list" aria-label="Infográficos de benefícios">
-          <figure role="listitem">
-            <img src="./img/ovos e beneficios.jpeg" alt="Informações nutricionais da gema e clara" />
-            <figcaption>Nutrição da gema e clara</figcaption>
-          </figure>
-          <figure role="listitem">
-            <img src="./img/beneficios.jpeg" alt="5 benefícios do ovo para a saúde" />
-            <figcaption>5 benefícios do ovo para a saúde</figcaption>
-          </figure>
-        </div>
-      </section>
+    <!-- BENEFÍCIOS DO OVO -->
+    <section id="beneficios" class="beneficios" aria-labelledby="titulo-beneficios">
+      <h2 id="titulo-beneficios">Benefícios do Ovo</h2>
+      <div class="infograficos" role="list" aria-label="Infográficos de benefícios">
+        <figure role="listitem">
+          <img src="./img/ovos e beneficios.jpeg" alt="Informações nutricionais da gema e clara" />
+          <figcaption>Nutrição da gema e clara</figcaption>
+        </figure>
+        <figure role="listitem">
+          <img src="./img/beneficios.jpeg" alt="5 benefícios do ovo para a saúde" />
+          <figcaption>5 benefícios do ovo para a saúde</figcaption>
+        </figure>
+      </div>
+    </section>
 
-      <!-- CONTATO -->
-      <section id="contato" class="contato" aria-labelledby="titulo-contato">
-        <h2 id="titulo-contato">Fale Conosco</h2>
-        <div class="contato-container">
-          <form action="#" method="post" aria-label="Formulário de contato">
-            <div>
-              <label for="nome">Seu nome</label>
-              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
-            </div>
-            <div>
-              <label for="email">Seu e-mail</label>
-              <input id="email" name="email" type="email" placeholder="Seu e-mail" required />
-            </div>
-            <div>
-              <label for="mensagem">Sua mensagem</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
+    <!-- CONTATO -->
+    <section id="contato" class="contato" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Fale Conosco</h2>
+      <div class="contato-container">
+        <form action="#" method="post" aria-label="Formulário de contato">
+          <div>
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+          </div>
+          <div>
+            <label for="email">Seu e-mail</label>
+            <input id="email" name="email" type="email" placeholder="Seu e-mail" required />
+          </div>
+          <div>
+            <label for="mensagem">Sua mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
 
-          <aside class="info-contato" aria-label="Informações de contato">
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511985320301" target="_blank" rel="noopener">Clique
-                aqui
-                para Conversar</a></p>
-            <p><strong>Telefone:</strong> (11) 98532-0301</p>
-            <p><strong>E-mail:</strong> <a href="mailto:alex19811984@outlook.com">alex19811984@outlook.com</a></p>
-            <p><strong>Endereço:</strong> Rua Júlio Prestes,205 - Vila São Paulo , Campo Limpo Paulista-SP</p>
+        <aside class="info-contato" aria-label="Informações de contato">
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511985320301" target="_blank" rel="noopener">Clique
+              aqui
+              para Conversar</a></p>
+          <p><strong>Telefone:</strong> (11) 98532-0301</p>
+          <p><strong>E-mail:</strong> <a href="mailto:alex19811984@outlook.com">alex19811984@outlook.com</a></p>
+          <p><strong>Endereço:</strong> Rua Júlio Prestes,205 - Vila São Paulo , Campo Limpo Paulista-SP</p>
 
-            <div class="mapa" aria-label="Mapa da localização">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.9528929751605!2d-46.7923359!3d-23.2083873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cedf923d0b4f21%3A0x8e43f7bd46723d91!2sOvos%20Prates!5e0!3m2!1spt-BR!2sbr!4v1757726041100!5m2!1spt-BR!2sbr"
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </aside>
-        </div>
-      </section>
+          <div class="mapa" aria-label="Mapa da localização">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.9528929751605!2d-46.7923359!3d-23.2083873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cedf923d0b4f21%3A0x8e43f7bd46723d91!2sOvos%20Prates!5e0!3m2!1spt-BR!2sbr!4v1757726041100!5m2!1spt-BR!2sbr"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
   </main>
 
   <a href="https://wa.me/5511985320301" class="whatsapp-fixo" title="Fale conosco pelo WhatsApp" target="_blank"
