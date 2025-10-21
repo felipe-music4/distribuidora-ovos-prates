@@ -66,15 +66,15 @@ document.querySelectorAll('.link-menu').forEach(link => {
   });
   const cards = document.querySelectorAll('.card');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('ativo');
-    }
-  });
-}, { threshold: 0.3 });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('ativo');
+      }
+    });
+  }, { threshold: 0.3 });
 
-cards.forEach(card => observer.observe(card));
+  cards.forEach(card => observer.observe(card));
 });
 
 const secoes = document.querySelectorAll(
@@ -90,6 +90,23 @@ const observerSecoes = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 
 secoes.forEach(secao => observerSecoes.observe(secao));
+function enviarParaWhatsApp() {
+  const nome = document.getElementById('nome').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const mensagem = document.getElementById('mensagem').value.trim();
+
+  if (!nome || !email || !mensagem) {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
+  const texto = `Olá, meu nome é ${nome}.\nEmail: ${email}\nMensagem: ${mensagem}`;
+  const numero = "5511985320301"; // Substitua pelo número real com DDI e DDD
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+  window.open(url, '_blank');
+}
+
 
 
 
