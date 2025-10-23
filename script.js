@@ -106,9 +106,3 @@ function enviarParaWhatsApp() {
 
   window.open(url, '_blank');
 }
-
-
-
-
-
-
