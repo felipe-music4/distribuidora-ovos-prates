@@ -525,26 +525,16 @@ form button:hover {
 .botao-parceiro:hover {
   background-color: #8b0000;
   transform: scale(1.05);
-}
 @media (max-width: 768px) {
   .menu-imagem {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: rgba(0, 0, 0, 0.6); /* opcional para contraste */
-    padding: 10px 0;
+    display: none; /* esconde o menu tradicional */
   }
 
-  .link-menu {
-    position: static;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 1.2em;
+  .menu-mobile {
+    display: block; /* mostra o menu hambúrguer */
   }
+}
+  
 }
 @media screen and (max-width: 768px) {
   .videos-dia-dia {
@@ -597,5 +587,67 @@ form button:hover {
     font-size: 1em;
     line-height: 1.5;
     padding: 0 10px;
+  }
+}
+.menu-mobile {
+  display: none; /* escondido no desktop */
+  position: relative;
+  background-color: #c62828;
+  padding: 10px;
+  text-align: right;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+.menu-links {
+  display: none;
+  flex-direction: column;
+  background-color: #000000cc;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+}
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.menu-links {
+  margin-bottom: 20px; /* afasta os links do conteúdo abaixo */
+}
+
+
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Mostrar o menu apenas no mobile */
+@media screen and (max-width: 768px) {
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-desktop {
+    display: none; /* se você tiver um menu tradicional, ele será escondido no mobile */
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-imagem,
+  .link-menu {
+    display: none !important;
   }
 }
