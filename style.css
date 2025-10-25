@@ -225,6 +225,7 @@ body {
 /* ===========================
    VÍDEOS
 =========================== */
+/* Container de vídeos */
 .videos-dia-dia {
   display: flex;
   flex-wrap: wrap;
@@ -233,9 +234,10 @@ body {
   padding: 40px 20px;
 }
 
+/* Card de vídeo no desktop */
 .card-video {
-  width: 48%;
-  max-width: 800px;
+  flex: 0 1 48%;
+  max-width: 48%;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -243,12 +245,37 @@ body {
   box-sizing: border-box;
 }
 
+/* Vídeo fixo no desktop */
 .card-video video {
   width: 100%;
   height: 420px;
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* Layout responsivo para mobile */
+@media screen and (max-width: 768px) {
+  .videos-dia-dia {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .card-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .card-video video {
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
 .logos-fornecedores {
   display: flex;
   flex-wrap: wrap;
@@ -517,5 +544,58 @@ form button:hover {
     text-align: center;
     padding: 10px 0;
     font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .videos-dia-dia {
+    display: block; /* força empilhamento */
+    padding: 20px 10px;
+  }
+
+  .card-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .card-video video {
+    width: 100% !important;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1, h2, h3, h4 {
+    font-size: 1.5em;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 10px;
+  }
+
+  .texto-parceiro {
+    padding: 0 10px;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .card-video {
+    padding: 10px;
+  }
+
+  .card-video h2, .card-video p {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0 10px;
   }
 }
