@@ -134,7 +134,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   width: 280px;
-  height: 460px;
+  height: auto;
+  min-height: 460px;
   padding: 25px;
   text-align: center;
   display: flex;
@@ -166,7 +167,10 @@ body {
 .card p {
   font-size: 1em;
   color: #555;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
+ 
 
 /* ===========================
    GALERIA DIA A DIA
@@ -199,10 +203,13 @@ body {
   align-items: center;
 }
 
+
 .card-dia img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  display: block;          /* elimina espaços extras */
+  width: 100%;             /* ocupa toda a largura do card */
+  height: 180px;           /* altura fixa */
+  object-fit: cover;       /* ajusta sem distorcer */
+  object-position: center; /* centraliza o corte */
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -592,7 +599,7 @@ form button:hover {
 .menu-mobile {
   display: none; /* escondido no desktop */
   position: relative;
-  background-color: #c62828;
+  background-color: #ffe066;
   padding: 10px;
   text-align: right;
 }
@@ -649,5 +656,24 @@ form button:hover {
   .menu-imagem,
   .link-menu {
     display: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .card h3 {
+    font-size: 1.1em;
+  }
+
+  .card p {
+    font-size: 0.95em;
   }
 }
